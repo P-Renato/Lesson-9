@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .item{
+           border: 1px solid red;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* pseudo class to select the 3rd div */
+        div:nth-child(3){
+        background-color: lightgreen;
+        }
+
+        /* pseudo class to apply style on hover */
+        .box4:hover{
+            color: red;
+            height: 200px;
+            background-color: violet;
+        }
+
+        /* selecting the element with class 'my-image' that has an attribute 'alt' with value 'random-pic' */
+        .my-image[alt="random-pic"]{
+            width: 100vw;
+        }
+
+        /* selecting the element with class 'my-image' that has an attribute 'alt' with value that starts with 'random' */
+        .my-image[alt^="random"]{
+            border: 2px solid blue;
+        }
+
+        /* selecting the element with class 'my-image' that does not have an attribute 'alt' */
+        .my-image:not([alt]){
+            border: 2px solid red;
+        }
+
+        /* selecting the element with class 'item' that has the element 'p' inside of it */
+        .item:has(p){
+            color: blue;
+        }
+
+        /* selecting the element with class 'item' that does not have the element 'span' inside of it */
+        .item:not(:has(span)){
+            color: green;
+        }
+    
+    </style>
+</head>
+<body>
+    
+        <div class="item box1 example"> <p> hi</p> <span>hello</span> </div>
+        <div class="item box2">hi</div>
+        <div class="item box3">hi <span>hello</span> </div>
+        <div class="item box4">hi <span>hello</span> </div>
+        <img class="my-image" src="https://picsum.photos/200" alt="random-pic">
+        <img class="my-image" src="https://picsum.photos/200" alt="random-second">
+        <img class="my-image" src="https://picsum.photos/200">
+   
+</body>
+
+</html>

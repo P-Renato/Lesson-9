@@ -1,0 +1,20 @@
+.item{
+    border: 1px solid red;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box {
+
+}
+
+div:nth-child(2) {
+    background-color: lightgreen;
+}
+
+.box4:hover {
+    color: red;
+    background-color: blueviolet;
+}
+

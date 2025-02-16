@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+        
+        .box::after {
+            content: "";
+            color: red;
+            border: 1px solid yellow;
+            width: 3rem;
+            height: 3rem;
+            display: inline-block;
+            background-color: rgba(247, 126, 13, 0.945);
+
+        }
+
+        .box::before {
+            content: "hi";
+            color: green;
+            border: 1px solid blue;
+        }
+
+
+        .greeting {
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        hello
+
+    </div>
+
+    <div class="greeting">Hello world</div>
+
+
+
+</body>
+</html>
